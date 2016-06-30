@@ -7,14 +7,14 @@ highlighter: pygments
 markdown: kramdown
 disqus: dbyll
 google_analytics: dbyll
-title: Electirc Spacecraft
+title: Electric Spacecraft
 
 defaults:
   -
     scope:
       path: "" # empty string for all files
     values:
-      title: dbyll
+      title: Electric Spacecraft
 
 description: 
 author:
@@ -24,7 +24,7 @@ author:
   twitter: mlight3
   pinterest: mlight3
   linkedin: mlight3
-  bio: iOS Engineer
+  bio: I am Paul Han, iOS Engineer, Travel lover
   email_md5: e5e216970f9cb9eaf39a40fb2bb7a7ed
 
 rss_path: feed.xml
