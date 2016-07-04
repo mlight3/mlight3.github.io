@@ -1,9 +1,7 @@
 ---
 published: true
-title: WWDC2016 #406 - Optimizing app startup time
+title: aaa
 layout: post
-tags: [wwdc, 2016, ios, swift]
-categories: [wwdc, 2016, ios, swift]
 ---
 ### Improving launch times
 * 좋은 런치 타임은 400ms
