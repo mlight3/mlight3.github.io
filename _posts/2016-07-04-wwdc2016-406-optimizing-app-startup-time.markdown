@@ -15,6 +15,7 @@ layout: post
 * Rebooting 을 해서 cold launch 테스트를 진행
 
 * 환경변수를 사용하여 launch time 에 대한 정보를 얻을 수 있다
+
 ```
 DYLD_PRINT_STATISTICS = 1
 ```
