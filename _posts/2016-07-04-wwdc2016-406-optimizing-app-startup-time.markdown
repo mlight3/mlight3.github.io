@@ -1,6 +1,6 @@
 ---
 published: true
-title: WWDC2016 406 Optimizing app startup time
+title: WWDC2016 - 406 Optimizing app startup time
 layout: post
 ---
 ### Improving launch times
