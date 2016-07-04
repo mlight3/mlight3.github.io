@@ -1,6 +1,6 @@
 ---
 published: true
-title: aaa
+title: WWDC2016 #406 Optimizing app startup time
 layout: post
 ---
 ### Improving launch times
@@ -21,4 +21,4 @@ DYLD_PRINT_STATISTICS = 1
 
 ### Solutions
 * dylib 를 merge 한다.
-* Swift 를 써라. 
+* Swift 를 써라.
