@@ -2,6 +2,7 @@
 published: true
 title: Dynamic Height TableViewCell
 layout: post
+tags: [tableview, layout]
 ---
 #### On code.
 
