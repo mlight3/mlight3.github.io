@@ -12,4 +12,5 @@ tableView.rowHeight = UITableViewAutomaticDimension
 ```
 
 #### On storyboard
-Add layout constraint to superview's bottom.
+- All views have to be inside content view of cell.
+- Add layout constraint to content view's bottom.
