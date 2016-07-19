@@ -1,6 +1,6 @@
 ---
 published: true
-title: WWDC2016 : 707 Introduction to Notification
+title: WWDC2016/ 707 Introduction to Notification
 layout: post
 ---
 ### New
