@@ -1,6 +1,6 @@
 ---
 published: true
-title: [code] Cribble
+title: Cribble
 layout: post
 tags: [swift, code, open, source, github, iOS]
 categories: [swift, ios]
