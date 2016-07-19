@@ -1,7 +1,9 @@
 ---
 published: true
-title: WWDC2016/ 707 Introduction to Notification
+title: WWDC2016 / 707 Introduction to Notification
 layout: post
+tags: [ios, notification, wwdc]
+categories: [ios]
 ---
 ### New
 * Can retrieve notificaiton setting of each app
