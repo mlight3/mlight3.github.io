@@ -3,7 +3,8 @@ layout: page
 tagline:
 ---
 
-{% for post in paginator.posts %}
+{% assign posts = paginator.posts | sort:"date" %}
+{% for post in posts %}
 
 <article class="home">
 
