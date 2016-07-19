@@ -2,6 +2,8 @@
 published: true
 title: CODE :  Cribble
 layout: post
+tags: [swift, code, open, source, github, iOS]
+categories: [swift, ios]
 ---
 # [Cribble](https://github.com/maxsokolov/Cribble)
 
