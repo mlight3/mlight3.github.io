@@ -1,0 +1,38 @@
+---
+layout: post
+title: "Currying - Use case"
+date: "2016-07-20 11:22:44 +0900"
+tags: [swift, code, ios]
+categories: [swift, ios]
+---
+
+Source:  [Practical use for curried fuctions in swift](http://drewag.me/posts/practical-use-for-curried-functions-in-swift)
+
+```
+extension Logger {
+  static var logLevel: Level = .Warn
+
+  static func log
+    (#level: Level)
+    (name: String)
+    (message: String) -> String {
+      if level.rawLevel <= Logger.logLevel.rawLevel {
+        return "\(level.description): \(name) - \(message)"
+      }  
+      return ""
+    }
+}
+```
+
+```
+extension Logger {
+  static var debug = Logger.log(level: .Debug)
+  static var warn = Logger.log(level: .Warn)
+  static var error = Logger.log(level: .Error)
+}
+```
+
+```
+let debugLogger = Logger.debug
+let fuctionDebugLogger = debugLogger(name: "Fuction")
+```

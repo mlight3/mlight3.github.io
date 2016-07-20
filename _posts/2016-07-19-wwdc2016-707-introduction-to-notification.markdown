@@ -1,9 +1,10 @@
 ---
 published: true
-title: WWDC2016 / 707 Introduction to Notification
+title: "[WWDC2016] #707 Introduction to Notification"
 layout: post
 tags: [ios, notification, wwdc]
 categories: [ios]
+date: "2016-07-19 09:07:08 +0900"
 ---
 ### New
 * Can retrieve notificaiton setting of each app
@@ -15,7 +16,7 @@ categories: [ios]
 ### Notification Action
 * Open app (Default Action)
 * Custom Action
-  * Button 
+  * Button
   * TextInput
 * Dismiss Action
 

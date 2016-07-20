@@ -3,6 +3,7 @@ published: true
 title: Dynamic Height TableViewCell
 layout: post
 tags: [swift, tableview, layout]
+date: "2016-07-14 18:07:08 +0900"
 categories: [ios, swift]
 ---
 #### On code.

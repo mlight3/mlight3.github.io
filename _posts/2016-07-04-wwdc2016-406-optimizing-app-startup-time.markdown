@@ -1,7 +1,8 @@
 ---
 published: true
-title: WWDC2016 / 406 Optimizing app startup time
+title: "[WWDC2016] #406 Optimizing app startup time"
 layout: post
+date: "2016-07-04 18:07:08 +0900"
 tags: [ios, wwdc]
 categories: [ios]
 ---
