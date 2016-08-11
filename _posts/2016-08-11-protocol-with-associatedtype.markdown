@@ -23,6 +23,7 @@ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 ```
 
 다음은 protocol 을 사용하여 Data 를 전달하는 방법이다.
+
 ```
 protocol Injectable {
   associatedtype Item
