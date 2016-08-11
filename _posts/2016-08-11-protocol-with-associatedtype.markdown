@@ -2,9 +2,9 @@
 layout: post
 title: "Protocol with associatedtype"
 date: "2016-08-11 17:16:28 +0900"
+tags: [swift, code, ios, protocol, associatedtype]
+categories: [swift, ios]
 ---
-
-#### With Storyboard
 
 Storyboard 사용 시, ViewController 간의 Data 전달을 하는게 굉장히 짜증스럽다;;
 보통 많이 쓰는 방법으로는 Data 를 public 으로 선언하고 `prepareForSegue` 함수내에서 전달하는 방법이 있다.
