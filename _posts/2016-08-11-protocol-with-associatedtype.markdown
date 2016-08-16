@@ -27,7 +27,7 @@ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 ```
 protocol Injectable {
   associatedtype Item
-  func Inject(item: Item)
+  func inject(item: Item)
 }
 ```
 
