@@ -16,7 +16,7 @@ defaults:
     values:
       title: Electric Spacecraft
 
-description: 
+description:
 author:
   name: mlight3
   email: mlight3@gmail.com
@@ -24,7 +24,7 @@ author:
   twitter: mlight3
   pinterest: mlight3
   linkedin: mlight3
-  bio: I am Paul Han, iOS Engineer, Travel lover
+  bio: I am Paul Han, iOS Engineer
   email_md5: e5e216970f9cb9eaf39a40fb2bb7a7ed
 
 rss_path: feed.xml

@@ -1,5 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
-@import url(https://fonts.googleapis.com/css?family=Montserrat+Subrayada|Chathura);
+@import url(https://fonts.googleapis.com/css?family=Chathura);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+@font-face {
+    font-family: mainTitleFont;
+    src: url(alte-din-1451-mittelschrift.regular.ttf);
+}
 
 .body-background {
 	background-color: #1D1B1B;
@@ -98,18 +104,19 @@ article .share .gplus:hover {
 }
 
 article{
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 }
 
 .article_body {
 	margin-top: 20px;
 	margin-bottom: 20px;
-	font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+	font-family: 'Nanum Gothic', sans-serif;
 	color: #B5B5B5;
+	line-height: 2em;
 }
 
 .home .article_body h1, h2, h3, h4, h5, h6 {
-	font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+	font-family: 'Nanum Gothic', sans-serif;
 	color: #ffffff !important;
 }
 
@@ -122,21 +129,26 @@ article{
 }
 
 article {
-	padding: 0 5% 0;
+	padding: 0 25% 0 0;
 }
 
-.home div a, .home pre a { color: #2c3e50; }
-.home div a:hover, .home pre a:hover { color: #2c3e50; text-decoration: none; }
+.home div a, .home pre a { color: #b26d73; }
+.home div a:hover, .home pre a:hover { color: #f998a1; text-decoration: none; }
 article img { max-width: 100%; }
 
-h1,h2,h3,h4,h5,h6 { font-family: 'Ubuntu', sans-serif; }
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'mainTitleFont', 'Nanum Gothic', sans-serif;
+	letter-spacing: 2px;
+}
+
 .home h1,
 .home h2,
 .home h3,
 .home h4,
 .home h5,
 .home h6 {
-	font-family: 'Montserrat Subrayada', sans-serif;
+	font-family: 'mainTitleFont', 'Nanum Gothic', sans-serif;
+	letter-spacing: 2px;
 	color: #f2756a;
 }
 
@@ -150,7 +162,7 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Ubuntu', sans-serif; }
 .home h2 a:hover,
 .home h3 a:hover,
 .home h4 a:hover {
-	color: #e74c3c;
+	color: #f998a1;
 }
 
 .author .author-image {
@@ -213,6 +225,31 @@ article > .home > .article_body h1, h2, h3, h4, h5, h6 {
 }
 
 .article_body h1, h2, h3, h4, h5, h6 {
-	font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+	font-family: 'Monaco,Menlo,Consolas,"Courier New",monospace;'
 	color: #ffffff !important;
+}
+
+.pager li>a {
+	background-color: #1d1b1b;
+	border: 0px;
+	color: #b26d73;
+}
+
+.pager li>a:hover {
+	color: #f998a1;
+	background-color: #1d1b1b;
+}
+
+.pager .disabled>a {
+	background-color: #1d1b1b;
+}
+
+.pager .disabled>a:hover {
+	background-color: #1d1b1b;
+}
+
+.pager .page_number {
+	background-color: #1d1b1b;
+	border: 0px;
+	color: #b0a5a5
 }
