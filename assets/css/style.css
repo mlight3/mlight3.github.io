@@ -1,11 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
-@import url(https://fonts.googleapis.com/css?family=Chathura);
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-
-@font-face {
-    font-family: mainTitleFont;
-    src: url(alte-din-1451-mittelschrift.regular.ttf);
-}
+@import url(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css);
 
 .navbar {
   width: 100%;
@@ -44,68 +37,57 @@
 .navbar-menus a.navbar-menu.menu-blog:hover, .navbar-menus a.navbar-menu.menu-blog:focus, .navbar-menus a.navbar-menu.menu-blog.active { color: #20c997; }
 .navbar-menus a.navbar-menu.menu-dribbble:hover { color: #f06595; }
 
-.body-background {
+body {
 	background-color: #FFFFFF;
+  margin-bottom: 70px;
+  padding-top: calc(70px + 3%);
+  font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
 }
+
+.post-list-container {
+  padding-top: calc(10%);
+}
+
 .content {
-  max-width: 740px;
+  max-width: 600px;
   margin: 0 auto;
+  display: block !important;
 }
 
-a.nav-link {
-	padding-bottom: 5px;
-	padding-top: 7px;
-	color: #aaa;
-}
-a.nav-link i{
-	font-size: 16px;
-}
-a.nav-link:hover { color: #777; }
-
-#bio {
-	font-family: "Ubuntu", sans-serif, monospace;
-	letter-spacing: 1.5px;
-	font-size: 12px;
-	margin: 0 auto;
-	margin-bottom: 10px;
+post {
+  display: block;
 }
 
-#contact-list li .fa,
-article .share .btn {
-	-o-transition:color .2s ease-out, background 1s ease-in;
-  -ms-transition:color .2s ease-out, background 1s ease-in;
-  -moz-transition:color .2s ease-out, background 1s ease-in;
-  -webkit-transition:color .2s ease-out, background 1s ease-in;
-  transition:color .2s ease-out, background 1s ease-in;
-}
-#contact-list li:hover .fa-twitter,
-article .share .twitter:hover {
-	color: #00ACEE;
-	border-color: #00ACEE;
-}
-#contact-list li:hover .fa-linkedin {
-	color: #1D87BD;
-}
-#contact-list li:hover .fa-envelope {
-	color: #E93E30;
-}
-#contact-list li:hover .fa-pinterest {
-	color: #CC2127;
-}
-#contact-list li:hover .fa-rss {
-	color: #e74c3c;
-}
-article .share .facebook:hover {
-	color: #43609C;
-	border-color: #43609C;
-}
-article .share .gplus:hover {
-	color: #C13929;
-	border-color: #C13929;
+post a, post a:link, post a:visited, post a:hover, post a:active {
+  text-decoration: none;
+  color: black;
 }
 
-#contact-list-secondary {
-	padding-bottom: 10px;
+post .post-date {
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: #A7;
+}
+
+post .post-title {
+  font-size: 53px;
+  font-weight: 300;
+  margin: 0;
+}
+
+post .post-content {
+  font-size: 15px;
+  font-weight: 300;
+  color: #939598;
+  line-height: 27px;
+  margin: 20px 0;
+}
+
+.line-separator{
+  height: 1px;
+  border-bottom: 1px solid #D3D3D3;
+  margin: 70px 0 100px 0;
 }
 
 .page-header {
@@ -119,130 +101,11 @@ article .share .gplus:hover {
     }
 }
 
-article{
-	margin-bottom: 80px;
-}
-
-.article_body {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	font-family: 'Nanum Gothic', sans-serif;
-	color: #B5B5B5;
-	line-height: 2em;
-}
-
-.home .article_body h1, h2, h3, h4, h5, h6 {
-	font-family: 'Nanum Gothic', sans-serif;
-	color: #ffffff !important;
-}
-
-
 .post-date {
 	text-transform: uppercase;
 	font-size: 10px;
 	letter-spacing: 3px;
 	color: #B5B5B5;
-}
-
-article {
-	padding: 0 25% 0 0;
-}
-
-.home div a, .home pre a { color: #b26d73; }
-.home div a:hover, .home pre a:hover { color: #f998a1; text-decoration: none; }
-article img { max-width: 100%; }
-
-h1,h2,h3,h4,h5,h6 {
-	font-family: 'mainTitleFont', 'Nanum Gothic', sans-serif;
-	letter-spacing: 2px;
-}
-
-.home h1,
-.home h2,
-.home h3,
-.home h4,
-.home h5,
-.home h6 {
-	font-family: 'mainTitleFont', 'Nanum Gothic', sans-serif;
-	letter-spacing: 2px;
-	color: #f2756a;
-}
-
-.home h1 a,
-.home h2 a,
-.home h3 a,
-.home h4 a {
-	color: #B6EE7E;
-}
-.home h1 a:hover,
-.home h2 a:hover,
-.home h3 a:hover,
-.home h4 a:hover {
-	color: #f998a1;
-}
-
-.author .author-image {
-  float: left;
-  margin-right: 20px;
-}
-
-footer {
-	padding-top: 15px;
-	font-family: 'Ubuntu';
-}
-
-/* nav-vertical-tabs component */
-.nav-tabs-vertical {
-    border-right: 1px solid #ddd;
-}
-
-.nav-tabs-vertical li {
-    margin-right: -1px;
-}
-
-.nav-tabs-vertical>li.active>a, .nav-tabs-vertical>li.active>a:hover, .nav-tabs-vertical>li.active>a:focus {
-    color: #555;
-    cursor: default;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-right-color: transparent;
-}
-
-.nav-tabs-vertical>li>a {
-    line-height: 1.428571429;
-    border: 1px solid transparent;
-    border-radius: 4px 0 0 4px;
-}
-
-.badge { background: #F2756A; }
-
-#nav-menu {
-    position: fixed;
-    top: 45px;
-    right: 45px;
-    z-index: 2000;
-}
-#nav-menu .dropdown-menu {
-    left: inherit;
-    right: 0px;
-}
-
-ul.dropdown-menu>li>a>i.fa {
-    width: 1.3em;
-}
-
-.content {
-	top: 40px;
-}
-
-article > .home > .article_body h1, h2, h3, h4, h5, h6 {
-	font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
-	color: #ffffff !important;
-}
-
-.article_body h1, h2, h3, h4, h5, h6 {
-	font-family: 'Monaco,Menlo,Consolas,"Courier New",monospace;'
-	color: #ffffff !important;
 }
 
 .pager li>a {

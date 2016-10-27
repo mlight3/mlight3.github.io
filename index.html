@@ -2,40 +2,43 @@
 layout: home
 type: home
 ---
+{% assign post_index = 1 %}
 {% assign posts = (paginator.posts | sort: "date") | reverse %}
 {% for post in posts %}
 
-<article class="home">
-  <h3>
-    <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-    <span class="post-date" style="margin-left: 15px">
-      {% assign d = post.date | date: "%d" | plus:'0' %}
-      {{ post.date | date: "%B" }}
-      {% case d %}
-      {% when 1 or 21 or 31 %}{{ d }}st,Ô
-      {% when 2 or 22 %}{{ d }}nd,
-      {% when 3 or 23 %}{{ d }}rd,
-      {% else %}{{ d }}th,
-      {% endcase %}
-      {{ post.date | date: "%Y" }}
-    </span>
-  </h3>
+<post class="post-summary">
+  <a href="{{ site.BASE_PATH }}{{ post.url }}">
+    <h1 class="post-date">
+      <div>
+        {% assign d = post.date | date: "%d" | plus:'0' %}
+        {{ post.date | date: "%b" }}
+        {{ d }}
+        {{ post.date | date: "%Y" }}
+      </div>
+    </h3>
+    <h1 class="post-title">
+      {{ post.title }}
+    </h1>
 
-  <div class="article_body">
-    {% if post.fullview %}
-    {{ post.content }}
-    {% else %}
-    {% if post.shortinfo %}
-    {{ post.shortinfo }}
-    {% elsif post.description %}
-    {{ post.description }}
-    {% else %}
-    {{ post.excerpt }}
-    {% endif %}
-    {% endif %}
-  </div>
+    <div class="post-content">
+      {% if post.fullview %}
+      {{ post.content }}
+      {% else %}
+      {% if post.shortinfo %}
+      {{ post.shortinfo }}
+      {% elsif post.description %}
+      {{ post.description }}
+      {% else %}
+      {{ post.excerpt }}
+      {% endif %}
+      {% endif %}
+    </div>
+  </a>
 
-</article>
+  {% if forloop.last == false %}
+  <div class="line-separator"></div>
+  {% endif %}
+</post>
 {% endfor %}
 
 <ul class="pager">
