@@ -7,14 +7,14 @@ highlighter: pygments
 markdown: kramdown
 disqus: dbyll
 google_analytics: dbyll
-title: Electric Spacecraft
+title: Rocketeer
 
 defaults:
   -
     scope:
       path: "" # empty string for all files
     values:
-      title: Electric Spacecraft
+      title: Rocketeer
 
 description:
 author:
