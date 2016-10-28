@@ -2,7 +2,6 @@
 layout: home
 type: home
 ---
-{% assign post_index = 1 %}
 {% assign posts = (paginator.posts | sort: "date") | reverse %}
 {% for post in posts %}
 
@@ -15,30 +14,18 @@ type: home
         {{ d }}
         {{ post.date | date: "%Y" }}
       </div>
-    </h3>
-    <h1 class="post-title">
-      {{ post.title }}
     </h1>
 
-    <div class="post-content">
-      {% if post.fullview %}
-      {{ post.content }}
-      {% else %}
-      {% if post.shortinfo %}
-      {{ post.shortinfo }}
-      {% elsif post.description %}
-      {{ post.description }}
-      {% else %}
-      {{ post.excerpt }}
-      {% endif %}
-      {% endif %}
-    </div>
-  </a>
+    <h1 class="post-title">{{ post.title }}</h1>
 
-  {% if forloop.last == false %}
-  <div class="line-separator"></div>
-  {% endif %}
+    <div class="post-content">{{ post.excerpt }}</div>
+  </a>
 </post>
+
+{% if forloop.last == false %}
+<div class="line-separator"></div>
+{% endif %}
+
 {% endfor %}
 
 <ul class="pager">

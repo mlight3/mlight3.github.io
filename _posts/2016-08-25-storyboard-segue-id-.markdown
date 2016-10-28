@@ -8,9 +8,10 @@ categories: [swift, ios]
 
 Storyboard 를 사용할때는 언제나 Segue identifier 관리가 번거롭다. 특히 가장 짜증났던것들은 오타문제들과 처리안된 segue 찾기.
 
+
 Storyboard 파일에서 identifier 설정하고, CTRL+CV 를 통하여 코드에 넣어두는데 하나의 뷰에서 여러개의 `segue` 가 있는 경우에는 `prepareSegue::` 함수가 꽤나 지져분하다.
 
-```
+```swift
 override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
   guard let deal = self.selectedDeal else { return }
   if segue.identifier == "sg_detail" {
@@ -29,7 +30,7 @@ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 주요코드는 다음과 같다. (필자는 원글의 protocol 이름을 Segueing 으로 수정해서 사용 중. )
 Segue 를 사용하는 ViewController 는 `Segueing` protocol 을 따르도록 선언한 후, `SegueIdentifier` enum 을 구현하면 된다.
 
-```
+```swift
 protocol Segueing {
   associatedtype SegueIdentifier: RawRepresentable
 }
@@ -51,7 +52,7 @@ extension Segueing where Self: UIViewController, SegueIdentifier.RawValue == Str
 ```
 
 
-```
+```swift
 class ViewController: UIViewController {
   @IBAction func didTouchPushButton() {
     performSegueWithIdentifier(.PushViewController, sender: nil)
