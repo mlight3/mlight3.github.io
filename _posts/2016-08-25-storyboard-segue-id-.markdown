@@ -4,6 +4,7 @@ title: "Storyboard Segue Id 관리하기"
 date: "2016-08-25 17:50:12 +0900"
 tags: [swift, code, ios, ui]
 categories: [swift, ios]
+comments: true
 ---
 
 Storyboard 를 사용할때는 언제나 Segue identifier 관리가 번거롭다. 특히 가장 짜증났던것들은 오타문제들과 처리안된 segue 찾기.
