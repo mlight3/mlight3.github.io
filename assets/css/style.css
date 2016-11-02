@@ -1,4 +1,5 @@
 @import url(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css);
+@import url(font.css);
 
 .navbar {
   width: 100%;
@@ -41,7 +42,7 @@ body {
 	background-color: #FFFFFF;
   margin-bottom: 70px;
   padding-top: calc(70px + 3%);
-  font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
+  font-family: SF Display, "Helvetica Neue", "Lucida Grande", Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
 }
 
 .post-list-container {
@@ -63,6 +64,7 @@ post a, post a:link, post a:visited, post a:hover, post a:active {
 }
 
 post .post-date {
+  font-family: SF Text, "Helvetica Neue", "Lucida Grande", Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
   font-size: 12px;
   font-weight: 200;
   letter-spacing: 1px;
@@ -81,6 +83,7 @@ post .post-title {
 }
 
 post .post-content {
+  font-family: SF Text, "Helvetica Neue", "Lucida Grande", Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
   font-size: 15px;
   font-weight: 300;
   color: #939598;
@@ -138,7 +141,17 @@ post .post-detail.post-content {
 }
 
 pre, code {
-  font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
+  font-family: SF Text, "Helvetica Neue", "Lucida Grande", Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
+}
+
+pre {
+    font-family: SF Text, "Helvetica Neue", "Lucida Grande", Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
+    width: 100%;
+    padding: 10px;
+    overflow: auto;
+    overflow-y: hidden;
+
+    border: 1px solid #777;
 }
 
 .highlight * {
