@@ -150,8 +150,20 @@ pre {
     padding: 10px;
     overflow: auto;
     overflow-y: hidden;
-
     border: 1px solid #777;
+}
+
+code {
+  color: black;
+  background-color: #E9E9E9;
+  border-radius: 3px;
+}
+
+pre code {
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+  background-color: transparent;
 }
 
 .highlight * {
